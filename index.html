@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Adivinhe o número</title>
+</head>
+<body>
+  <main class="container">
+    <h1 class="title">Adivinhe o Número Aleatório</h1>
+
+    <h2 class="subtitle">Primeiro, defina entre quais números o número aleatório deve estar.</h2>
+
+    <section class="input-group">
+      <div class="input-field">
+        <label for="min-number">Mín:</label>
+        <input type="number" id="min-number">
+      </div>
+      <div class="input-field">
+        <label for="max-number">Máx:</label>
+        <input type="number" id="max-number">
+      </div>
+    </section>
+
+    <button id="generate-number-button">Gerar Número</button>
+
+    <section class="guess-the-number invisible">
+      <div class="input-field">
+        <label for="guess-number">Adivinhe o número gerado:</label>
+        <input type="number" id="guess-number">
+      </div>
+
+      <button id="kick-button">Chutar</button>
+
+      <span id="result-about-guess"></span>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

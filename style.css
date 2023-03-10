@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #121214;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 500px;
+  background-color: #343434;
+  color: #efefef;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  display: flex;
+  gap: 30px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.input-field label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.input-field input {
+  background-color: transparent;
+  border: none;
+  border: 2px solid #9466FF;
+  border-radius: 5px;
+  color: #efefef;
+  font-size: 18px;
+  padding: 5px;
+  width: 100%;
+}
+
+.input-field input:focus {
+  outline: none;
+  border: 3px solid #8049ff;
+}
+
+.input-field input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#generate-number-button, #kick-button {
+  width: 100%;
+  margin: 20px 0;
+  padding: 12px 0;
+  border: none;
+  background-color: #04D361;
+  color: #efefef;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+#generate-number-button:hover, #kick-button:hover {
+  background-color: #03e468;
+}
+
+#generate-number-button:active, #kick-button:active {
+  opacity: 0.8;
+}
+
+.guess-the-number {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  border-top: 2px solid #c2c2c2;
+}
+
+#result-about-guess {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.invisible {
+  display: none;
+}
+
+@media(max-width: 490px) {
+  .container {
+    max-width: 95%;
+  }
+  .title {
+    font-size: 21px;
+  }
+  .input-group {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+}
